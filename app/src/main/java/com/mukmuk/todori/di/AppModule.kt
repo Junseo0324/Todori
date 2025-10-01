@@ -15,6 +15,7 @@ import com.mukmuk.todori.data.repository.HomeRepository
 import com.mukmuk.todori.data.repository.QuestRepository
 import com.mukmuk.todori.data.repository.StudyRepository
 import com.mukmuk.todori.data.repository.StudyStatsRepository
+import com.mukmuk.todori.data.repository.StudyV2Repository
 import com.mukmuk.todori.data.repository.TodoCategoryRepository
 import com.mukmuk.todori.data.repository.TodoRepository
 import com.mukmuk.todori.data.repository.TodoStatsRepository
@@ -26,6 +27,7 @@ import com.mukmuk.todori.data.service.GoalTodoService
 import com.mukmuk.todori.data.service.HomeService
 import com.mukmuk.todori.data.service.QuestService
 import com.mukmuk.todori.data.service.StudyService
+import com.mukmuk.todori.data.service.StudyV2Service
 import com.mukmuk.todori.data.service.TodoCategoryService
 import com.mukmuk.todori.data.service.TodoService
 import com.mukmuk.todori.data.service.TodoStatsService
@@ -191,5 +193,15 @@ object AppModule {
     @Singleton
     fun provideHomeRepository(homeService: HomeService): HomeRepository =
         HomeRepository(homeService)
+
+    @Provides
+    @Singleton
+    fun provideStudyV2Service(firestore: FirebaseFirestore): StudyV2Service =
+        StudyV2Service(firestore)
+
+    @Provides
+    @Singleton
+    fun provideStudyV2Repository(studyV2Service: StudyV2Service): StudyV2Repository =
+        StudyV2Repository(studyV2Service)
 
 }

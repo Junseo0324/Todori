@@ -36,7 +36,8 @@ import kotlinx.datetime.LocalDate
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun StudyTodoList(selectedDate: LocalDate,navController: NavHostController) {
-    val viewModel: StudyListViewModel = hiltViewModel()
+//    val viewModel: StudyListViewModel = hiltViewModel()
+    val viewModel: StudyV2ListViewModel = hiltViewModel()
 
     val uid = Firebase.auth.currentUser?.uid.toString()
 
@@ -44,6 +45,11 @@ fun StudyTodoList(selectedDate: LocalDate,navController: NavHostController) {
 
     LaunchedEffect(selectedDate) {
         viewModel.loadAllStudies(uid, selectedDate.toString())
+        println("selectedDate: $selectedDate")
+        println("loadAllStudies todosMap: ${state.todosMap}")
+        println("loadAllStudies studies: ${state.studies}")
+        println("loadAllStudies membersMap: ${state.membersMap}")
+        println("loadAllStudies progressMap: ${state.progressMap}")
     }
     val studies = state.studies.values.toList()
     val membersMap = state.membersMap
