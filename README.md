@@ -120,6 +120,9 @@ com.mukmuk.todori
 | ---------- | ------ |
 | <img width="200" alt="1 (3)" src="https://github.com/user-attachments/assets/5b02d08c-97dd-47b9-937e-cd4e0da29d13" /> <img width="200" alt="1 (4)" src="https://github.com/user-attachments/assets/15cea113-df7c-4af1-8ae0-b4b44b5f9c61" /> | <img width="200" alt="1 (7)" src="https://github.com/user-attachments/assets/3ac8a71f-5edc-4034-9bce-dbd51fecec97" /> <img width="200" alt="1 (8)" src="https://github.com/user-attachments/assets/3bc175b7-f6cb-4571-a692-08018c4e47e7" /> |
 
+| 일간 통계 | 주간 통계 | 월간 통계 | 통계 리포트 |
+| -------- | -------- | -------- | -------- |
+| <img src="./images/day_stat.gif" width="200"/> | <img src="./images/week_stat.gif" width="200"/> | <img src="./images/month_stat.gif" width="200"/> | <img src="./images/report_stat.gif" width="200"/> |
 
 | 추가 화면 | 위젯 화면 |
 | ---------- | ------ |
