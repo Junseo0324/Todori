@@ -91,6 +91,8 @@ fun CustomSlider(
                 radius = 14.dp.toPx(),
                 center = Offset(thumbX, centerY + 2.dp.toPx())
             )
+
+
             drawCircle(
                 color = activeColor,
                 radius = 12.dp.toPx(),
