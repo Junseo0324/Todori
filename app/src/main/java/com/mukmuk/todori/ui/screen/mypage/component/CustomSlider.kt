@@ -98,6 +98,8 @@ fun CustomSlider(
                 radius = 12.dp.toPx(),
                 center = Offset(thumbX, centerY)
             )
+
+
             drawCircle(
                 color = Color.White.copy(alpha = 0.3f),
                 radius = 6.dp.toPx(),
